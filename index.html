@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reading study</title>
+<link rel="stylesheet" href="style.css">
+<script>window.STUDY = {"submit": "https://script.google.com/macros/s/AKfycbzns769cGIfrFZCLlEq1xE3Y8IWXxr5_to9CKfS7JN-jgyIJ_bfofrji6FDHgafArM-/exec", "contact": "aaditya.baranwal@ucf.edu", "itemsSha": "ad011d96e274264e456ba9810cb9d5feb354b3755df877c9f507d87aeb661c2a", "study": "reading-2026-10"};</script>
+</head>
+<body>
+<div id="app">
+  <header id="top">
+    <span class="brand">Reading study</span>
+    <span class="where" id="where" data-test="where"></span>
+    <div class="bar" aria-hidden="true"><i id="prog"></i></div>
+    <span class="left" id="left"></span>
+    <span class="grow"></span>
+    <button class="chip" id="saveCopy" data-test="download-copy" title="Download your answers now" hidden>Save a copy</button>
+  </header>
+  <div id="warn" class="warn" data-test="storage-warning" role="alert" hidden>This browser does not let the page save your work. Do not close this tab before you finish a part.</div>
+  <div id="notice" class="notice" role="status" hidden></div>
+  <main id="main"><div class="mid"><div class="card"><p>Loading the study…</p></div></div></main>
+</div>
+
+<div class="reader" id="reader" data-test="reader" role="dialog" aria-modal="true" aria-label="Page reader" hidden>
+  <div class="rv-top">
+    <span id="rvWhere"></span>
+    <span class="grow"></span>
+    <button class="btn rv-mark" id="rvMark" data-test="reader-mark" aria-pressed="false" hidden>Mark this page</button>
+    <button class="btn" id="rvClose" data-test="reader-close">Close</button>
+  </div>
+  <div class="rv-stage" id="rvStage">
+    <button class="rv-nav" id="rvPrev" data-test="reader-prev" aria-label="Previous page">&#8249;</button>
+    <div class="rv-page" id="rvPage"></div>
+    <button class="rv-nav" id="rvNext" data-test="reader-next" aria-label="Next page">&#8250;</button>
+  </div>
+  <div class="rv-bottom">
+    <span class="hint" id="rvHint"></span>
+    <span class="grow"></span>
+    <button class="btn primary" id="rvDone" data-test="reader-done" hidden>Go to the events</button>
+  </div>
+</div>
+
+<script src="core.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
